@@ -1,6 +1,6 @@
 import gdsfactory as gf
 from pathlib import Path
-from gdsfactory.technology import LayerMap
+from gdsfactory.technology import LayerMap, LayerViews
 from gdsfactory.typings import Layer
 import pandas as pd
 
@@ -56,3 +56,5 @@ class LayerMapFab(LayerMap):
 
 
 LAYER = LayerMapFab
+
+LAYER_VIEWS = LayerViews(filepath=Path(__file__).parent / "layers.yaml", layers=LAYER)

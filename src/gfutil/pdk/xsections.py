@@ -38,7 +38,7 @@ def strip(
         offset: float = 0.,
         cladding_layer: LayerSpec | None = None,
         cladding_offset: float = 14.,
-        width: float = 1.0,
+        width: float = STRIP_WIDTH,
         radius: float = 60.0,
         radius_min: float = 5,
         add_cladding: bool = False,
