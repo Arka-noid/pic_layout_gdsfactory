@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdsfactory_env"
+version = "0.1.0"
+description = "A basic gdsfactory project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "gdsfactory",
+    "ipykernel",
+]
+
+authors = [
+    { name = "Manuel Reza" }
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
