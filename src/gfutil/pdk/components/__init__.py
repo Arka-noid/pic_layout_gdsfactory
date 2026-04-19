@@ -19,6 +19,11 @@ from .grating_coupler import (
     dummy_fgc
 )
 
+from .transitions import (
+    taper_cross_section,
+    strip_to_rib,
+)
+
 
 from .floorplan import floorplan
 
@@ -33,6 +38,9 @@ COMPONENTS = dict(
 
 
     dummy_fgc=dummy_fgc,
+
+    taper_cross_section=taper_cross_section,
+    strip_to_rib=strip_to_rib,
 
 
     floorplan=floorplan,
