@@ -24,6 +24,6 @@ def floorplan(
 
 
 if __name__ == '__main__':
-    from import_pdk import *
+    from gfutil import pdk
     c = floorplan()
     c.show()
